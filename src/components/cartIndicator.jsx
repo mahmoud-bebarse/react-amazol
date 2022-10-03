@@ -18,7 +18,7 @@ const CartIndicator = () => {
       <FontAwesomeIcon
         icon={faCartShopping}
         color={"#FFF"}
-        onClick={() => navigate("cart")}
+        onClick={() => navigate("/cart")}
       />
     </div>
   );

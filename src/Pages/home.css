@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: 15px;
+    justify-content: space-between;
+    background-color: white;
+}
+.desc{
+    margin: 0 35px;
+}
+.img{
+    width: 200px;
+    height: 220px;
+}
+.btn{
+    margin: 0 25px;
+}
+.ad{
+    width: 1900px;
+    height: 800px;
+    margin-left: 000px;
+}

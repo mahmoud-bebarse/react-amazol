@@ -3,13 +3,13 @@ import Navbar from "../navbar";
 import { Products, Slideshow } from "../Data/products";
 import WrappedText from "./../components/WrappedText";
 import "./home.css";
-import { CartReducer, initState } from "../reducers/cartReducer";
+import { CartReducer, initCartState } from "../reducers/cartReducer";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 const HomeEx = () => {
   const slideshow = Slideshow;
-  const [cart, dispatch] = useReducer(CartReducer, initState);
+  const [cart, dispatch] = useReducer(CartReducer, initCartState);
 
   const handleAddItem = (item) => {
     dispatch({ type: "ADD", item });

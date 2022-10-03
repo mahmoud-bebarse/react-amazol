@@ -1,14 +1,10 @@
-import React, { useReducer } from "react";
+import React from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { CartReducer, initState } from "./reducers/cartReducer";
-
+import { CartContextProvider } from "./contexts/cartContext";
+import CartIndicator from "./components/cartIndicator";
 
 const Navbar = () => {
-  const [cart, dispatch] = useReducer(CartReducer, initState);
-
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -53,11 +49,9 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div style={{ display: "flex", flexDirection: "row", marginRight: 20 }}>
-          {console.log(cart)}
-          <p style={{ color: "#FFF" }}>{cart.cartItems.length}</p>
-          <FontAwesomeIcon icon={faCartShopping} color={"#FFF"} />
-        </div>
+        <CartContextProvider>
+          <CartIndicator />
+        </CartContextProvider>
       </nav>
       <ul
         style={{

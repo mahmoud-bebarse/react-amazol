@@ -1,0 +1,35 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 20px;
+    background-color:#f2f2f2;
+    height: 100%;
+    padding-left:5;
+    width: 900px;
+    margin-left: 26%;
+    border: 1px solid black ;
+    border-radius: 20px;
+    max-width: 900px;
+
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    font-family:'Times New Roman', Times, serif;
+    color:azure;
+    background-color: rgb(33, 37, 41);
+    width: 160px;
+    height: 50px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+.eg{
+    padding-top: 18px;
+}
+.para{
+    padding-top: 10px;
+    font-weight:bolder;
+    font-size: large;
+    line-height: 44px;
+}

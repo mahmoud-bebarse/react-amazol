@@ -1,16 +1,19 @@
-import React, { Component } from 'react';
-import { RouterProvider} from "react-router-dom";
-import { router } from './routing';
+import React, { Component } from "react";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routing";
+import { CartContextProvider } from "./contexts/cartContext";
 
 class App extends Component {
-  state = {  } 
-  render() { 
+  state = {};
+  render() {
     return (
       <div>
-        <RouterProvider router={router}/>
+        <CartContextProvider>
+          <RouterProvider router={router} />
+        </CartContextProvider>
       </div>
     );
   }
 }
- 
+
 export default App;

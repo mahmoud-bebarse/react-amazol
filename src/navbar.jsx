@@ -49,9 +49,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <CartContextProvider>
           <CartIndicator />
-        </CartContextProvider>
       </nav>
       <ul
         style={{

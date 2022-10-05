@@ -61,22 +61,22 @@ const Navbar = () => {
         }}
       >
         <li style={{ display: "inline", marginLeft: 0 }}>
-          <Link className="linky" to="/electronics">
+          <Link className="linky" to="/categories/electronics">
             Electronics
           </Link>
         </li>
         <li style={{ display: "inline", marginLeft: 30 }}>
-          <Link className="linky" to="/accessories">
+          <Link className="linky" to="/categories/accessories">
             Accessories
           </Link>
         </li>
         <li style={{ display: "inline", marginLeft: 30 }}>
-          <Link className="linky" to="/clothes">
+          <Link className="linky" to="/categories/clothes">
             Clothes
           </Link>
         </li>
         <li style={{ display: "inline", marginLeft: 30 }}>
-          <Link className="linky" to="/bags">
+          <Link className="linky" to="/categories/bags">
             Bags
           </Link>
         </li>

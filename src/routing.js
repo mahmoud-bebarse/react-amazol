@@ -21,15 +21,16 @@ export const router = createBrowserRouter([
     element: <Contactus />,
   },
   {
-    path: "/:id",
+    path: "/categories/:id",
     element: <Categories />,
+    errorElement: <Notfound/>
   },
   {
     path: "cart",
     element: <Cart />,
   },
   {
-    path: "/*",
+    path: "*",
     element: <Notfound />,
   },
 ]);

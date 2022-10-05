@@ -1,5 +1,12 @@
 import React from "react";
 import Navbar from "../navbar";
+import {
+  faFacebook,
+  faLinkedin,
+  faTwitter,
+  faTelegram,
+  faTiktok
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Contactus = () => {
   return (
@@ -12,7 +19,6 @@ const Contactus = () => {
         }}
       >
         <h1 style={{ width: 450, fontWeight: "bolder" }}>
-          {" "}
           Love To hear form you, get in touch
         </h1>
         <div>
@@ -85,7 +91,13 @@ const Contactus = () => {
           style={{ marginTop: 80, display: "flex", flexDirection: "column" }}
         >
           <h4>Social Media</h4>
-          
+          <div style={{ display: "flex", flexDirection: "row",width:350, justifyContent:"space-around",marginTop:10 }}>
+            <FontAwesomeIcon icon={faFacebook} size={"2x"} />
+            <FontAwesomeIcon icon={faTwitter} size={"2x"} />
+            <FontAwesomeIcon icon={faLinkedin} size={"2x"} />
+            <FontAwesomeIcon icon={faTiktok} size={"2x"} />
+            <FontAwesomeIcon icon={faTelegram} size={"2x"} />
+          </div>
         </div>
       </div>
     </div>
